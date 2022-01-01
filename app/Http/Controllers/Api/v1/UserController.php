@@ -11,10 +11,17 @@ use Symfony\Component\HttpFoundation\Response;
 
 class UserController extends MainController
 {
+    public function index()
+    {
+        $data['orders'] = User::with(['orders'])->get();
+        return $this->successResponse($data, 'Order list', Response::HTTP_OK);
+    }
+
     public function register(UserRegistrationRequest $request)
     {
         $input = $request->only('name', 'email', 'password');
         $input['password'] = bcrypt($input['password']);
+        $input['is_admin'] = false;
         $user = User::create($input);
         $userdata = $this->getFormattedData($user);
         if($user) {
@@ -38,6 +45,27 @@ class UserController extends MainController
         else{
             return $this->errorResponse('Unauthorised.', ['error'=>'Sorry you are Unauthorised!'], Response::HTTP_NOT_FOUND);
         }
+    }
+
+    public function logout()
+    {
+        $user = auth()->user()->currentAccessToken()->delete();
+        if($user){
+            return $this->successResponse('logout', 'User logout successfully.', Response::HTTP_OK);
+        }else{
+            return $this->errorResponse('logout.', ['error'=>'Logout Failed'], Response::HTTP_NOT_FOUND);
+        }
+    }
+
+    public function show(User $user)
+    {
+        return $this->successResponse($user, 'View User', Response::HTTP_OK);
+    }
+
+    public function showOrders(User $user)
+    {
+        $data['orders'] = $user->orders()->with(['product'])->get();
+        return $this->successResponse($data, 'Order list', Response::HTTP_OK);
     }
 
     protected function getFormattedData($user){

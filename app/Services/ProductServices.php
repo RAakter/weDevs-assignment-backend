@@ -1,6 +1,7 @@
 <?php
 namespace App\Services;
 
+use App\Repositories\ProductRepository;
 use Illuminate\Support\Facades\Storage;
 
 class ProductServices

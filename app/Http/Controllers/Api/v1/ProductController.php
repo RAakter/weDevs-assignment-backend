@@ -7,6 +7,7 @@ use App\Models\Product;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Services\ProductServices;
+use Symfony\Component\HttpFoundation\Response;
 
 class ProductController extends MainController
 {
@@ -18,7 +19,7 @@ class ProductController extends MainController
     public function index()
     {
         $products = Product::all();
-        return $this->successResponse($products, 'Product list viewed Successfully');
+        return $this->successResponse($products, 'Product list viewed Successfully', Response::HTTP_OK);
     }
 
     /**
@@ -32,7 +33,7 @@ class ProductController extends MainController
     {
         $image = $productServices->image($request);
         $data['product'] = Product::create(array_merge($request->all(), $image));
-        return $this->successResponse($data, 'Product Created Successfully');
+        return $this->successResponse($data, 'Product Created Successfully', Response::HTTP_OK);
     }
 
     /**
@@ -44,7 +45,7 @@ class ProductController extends MainController
     public function show(Product $product)
     {
         $data['product'] = $product;
-        return $this->successResponse($data, 'Product Viewed Successfully');
+        return $this->successResponse($data, 'Product Viewed Successfully', Response::HTTP_OK);
     }
 
     /**
@@ -60,7 +61,7 @@ class ProductController extends MainController
         $image = $productServices->image($request);
         $product->update(array_merge($request->all(), $image));
         $data['product'] =  $product;
-        return $this->successResponse($data, 'Product Updated Successfully');
+        return $this->successResponse($data, 'Product Updated Successfully', Response::HTTP_OK);
     }
 
     /**
@@ -74,6 +75,7 @@ class ProductController extends MainController
     {
         $productServices->imageDelete($product->image);
         $product->delete();
-        return $this->successResponse('Deleted', 'Product Deleted Successfully');
+        return $this->successResponse('Deleted', 'Product Deleted Successfully', Response::HTTP_OK);
     }
+
 }
