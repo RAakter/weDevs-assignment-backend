@@ -30,7 +30,6 @@ class UserRegistrationRequest extends FormRequest
             'email' => 'required|email|unique:users,email,'.$this->id.',id',
             'password' => 'required|min:8',
             'c_password' => 'required|same:password',
-            'role' => 'nullable|string|exists:roles,name',
         ];
 
     }

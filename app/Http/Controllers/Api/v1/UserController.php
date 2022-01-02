@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\v1;
 use App\Http\Controllers\Api\v1\MainController as MainController;
 use App\Http\Requests\UserLoginRequest;
 use App\Http\Requests\UserRegistrationRequest;
+use App\Models\Order;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
@@ -23,9 +24,13 @@ class UserController extends MainController
         $input['password'] = bcrypt($input['password']);
         $input['is_admin'] = false;
         $user = User::create($input);
-        $userdata = $this->getFormattedData($user);
+
+        $data['accessToken'] =  $user->createToken('weDevsProject')->plainTextToken;
+        $data['name'] =  $user->name;
+        $data['email'] =  $user->email;
+        
         if($user) {
-            return $this->successResponse($userdata, 'User registered Successfully.',Response::HTTP_OK);
+            return $this->successResponse($data, 'User registered Successfully.',Response::HTTP_OK);
         }
         else {
             return $this->errorResponse('failed to register', ['error'=>'User Registration Failed.'], Response::HTTP_NOT_FOUND);
@@ -69,9 +74,11 @@ class UserController extends MainController
     }
 
     protected function getFormattedData($user){
-        $data['token'] =  $user->createToken('weDevsProject')->plainTextToken;
+        $data['accessToken'] =  $user->createToken('weDevsProject')->plainTextToken;
         $data['name'] =  $user->name;
         $data['email'] =  $user->email;
+        $data['is_admin'] =  $user->is_admin;
+        $data['orders'] = Order::where('user_id',$user->id)->with('product')->get();
         return $data;
     }
 }
