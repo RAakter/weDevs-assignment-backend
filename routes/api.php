@@ -27,20 +27,20 @@ Route::prefix('v1')->group(function () {
     Route::post('register', [UserController::class, 'register']);
     Route::post('login', [UserController::class, 'login']);
 
-    Route::post('order/list', [UserController::class, 'index']);
-    Route::post('users', [UserController::class, 'show']);
-    Route::post('orders', [UserController::class, 'showOrders']);
-
-    route::apiResource('order', 'OrderController')->except('update');
-    route::post('order/update/{order}', [OrderController::class, 'update']);
-    route::post('order/status/{order}', [OrderController::class, 'statusUpdate']);
-
     Route::middleware('auth:sanctum')->group(function () {
         Route::post('logout',  [UserController::class, 'logout']);
+
         Route::apiResource('/products', 'ProductController')->except(['index','show','update']);
         Route::post('products/update/{product}', [ProductController::class,'update']);
 
+        Route::post('order/update/{order}', [OrderController::class, 'update']);
+        Route::post('order/status/{order}', [OrderController::class, 'statusUpdate']);
+        Route::post('order/list', [UserController::class, 'index']);
+        Route::post('users', [UserController::class, 'show']);
+        Route::post('orders', [UserController::class, 'showOrders']);
+        Route::apiResource('order', 'OrderController')->except('update');
 
+        Route::get('read/notifications', [UserController::class, 'readNotification']);
 
     });
 });

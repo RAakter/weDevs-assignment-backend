@@ -44,8 +44,7 @@ class ProductController extends MainController
      */
     public function show(Product $product)
     {
-        $data['product'] = $product;
-        return $this->successResponse($data, 'Product Viewed Successfully', Response::HTTP_OK);
+        return $this->successResponse($product, 'Product Viewed Successfully', Response::HTTP_OK);
     }
 
     /**

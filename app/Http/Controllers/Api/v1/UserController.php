@@ -28,7 +28,7 @@ class UserController extends MainController
         $data['accessToken'] =  $user->createToken('weDevsProject')->plainTextToken;
         $data['name'] =  $user->name;
         $data['email'] =  $user->email;
-        
+
         if($user) {
             return $this->successResponse($data, 'User registered Successfully.',Response::HTTP_OK);
         }
@@ -79,6 +79,13 @@ class UserController extends MainController
         $data['email'] =  $user->email;
         $data['is_admin'] =  $user->is_admin;
         $data['orders'] = Order::where('user_id',$user->id)->with('product')->get();
+        $data['notification'][] = Auth::user()->notifications;
         return $data;
+    }
+
+    public function readNotification()
+    {
+        Auth::user()->unreadNotifications->markAsRead();
+        return $this->successResponse('Notification', 'Notification Mark as read successfully.',Response::HTTP_OK);
     }
 }

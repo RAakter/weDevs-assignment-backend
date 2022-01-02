@@ -62,7 +62,7 @@ class OrderController extends MainController
             return $this->successResponse($data, 'Order Updated Successfully', Response::HTTP_OK);
         }
         else{
-            return $this->errorResponse('failed', 'Sorry you can\'t edit the Order', Response::HTTP_NOT_FOUND);
+            return $this->errorResponse('failed', 'Sorry you are not allowed to edit this Order', Response::HTTP_NOT_FOUND);
         }
 
     }
@@ -84,6 +84,6 @@ class OrderController extends MainController
         $order->update($request->only('status'));
         $data['order'] =  $order;
 
-        return $this->successResponse($order, 'Order Deleted Successfully');
+        return $this->successResponse($order, 'Order Status Updated Successfully');
     }
 }
