@@ -34,7 +34,7 @@ class OrderCreateJob implements ShouldQueue
      */
     public function handle()
     {
-        $admin = User::where('is_admin',1)->get();
+        $admin = User::where('is_admin',1)->first();
         $admin->notify(new OrderNotification($this->order));
     }
 }

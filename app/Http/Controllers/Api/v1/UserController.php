@@ -75,6 +75,7 @@ class UserController extends MainController
 
     protected function getFormattedData($user){
         $data['accessToken'] =  $user->createToken('weDevsProject')->plainTextToken;
+        $data['id'] =  $user->id;
         $data['name'] =  $user->name;
         $data['email'] =  $user->email;
         $data['is_admin'] =  $user->is_admin;
