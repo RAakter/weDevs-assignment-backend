@@ -62,15 +62,10 @@ class UserController extends MainController
         }
     }
 
-    public function show(User $user)
+    public function show()
     {
-        return $this->successResponse($user, 'View User', Response::HTTP_OK);
-    }
-
-    public function showOrders(User $user)
-    {
-        $data['orders'] = $user->orders()->with(['product'])->get();
-        return $this->successResponse($data, 'Order list', Response::HTTP_OK);
+        $data = User::where('is_admin', 0)->get();
+        return $this->successResponse($data, 'All User', Response::HTTP_OK);
     }
 
     protected function getFormattedData($user){
@@ -79,14 +74,10 @@ class UserController extends MainController
         $data['name'] =  $user->name;
         $data['email'] =  $user->email;
         $data['is_admin'] =  $user->is_admin;
-        $data['orders'] = Order::where('user_id',$user->id)->with('product')->get();
+        if ($user->is_admin == 0){
+            $data['orders'] = Order::where('user_id',$user->id)->with('product')->get();
+        }
         $data['notification'][] = Auth::user()->notifications;
         return $data;
-    }
-
-    public function readNotification()
-    {
-        Auth::user()->unreadNotifications->markAsRead();
-        return $this->successResponse('Notification', 'Notification Mark as read successfully.',Response::HTTP_OK);
     }
 }

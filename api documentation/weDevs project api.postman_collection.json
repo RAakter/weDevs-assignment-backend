@@ -1,0 +1,1899 @@
+{
+	"info": {
+		"_postman_id": "73a12eb2-4e04-48cf-ac72-c0a7967959a1",
+		"name": "weDevs project api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "http://localhost:9000/Api/v1/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Rezowana Akter",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "rezowana102@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:9000/Api/v1/register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Rezowana Akter",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "rezowana102@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "text"
+										},
+										{
+											"key": "c_password",
+											"value": "123456789",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:9000/Api/v1/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"Api",
+										"v1",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:9000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jan 2022 09:41:36 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jan 2022 09:41:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"accessToken\": \"96|C8q3FaFZMsEj5ze50olrGnEhhSfD3N0Ddrg1CMUs\",\n        \"name\": \"Rezowana Akter\",\n        \"email\": \"rezowana102@gmail.com\"\n    },\n    \"message\": \"User registered Successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:9000/Api/v1/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "joe@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "joe@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:9000/Api/v1/login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "joe@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "joe@gmail.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:9000/Api/v1/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"Api",
+										"v1",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:9000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jan 2022 09:42:46 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jan 2022 09:42:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"accessToken\": \"97|WnqBz7L6QSDy3cf9XPDk2sqgNmOvc7wbDWyAR511\",\n        \"name\": \"Rezowana Akter\",\n        \"email\": \"joe@gmail.com\",\n        \"is_admin\": 0,\n        \"orders\": [\n            {\n                \"id\": 2,\n                \"user_id\": 4,\n                \"name\": \"Rezowana\",\n                \"phone\": \"01781474358\",\n                \"address\": \"Gulshan, Dhaka\",\n                \"product_id\": 5,\n                \"price\": \"4136.00\",\n                \"quantity\": 1,\n                \"total_price\": \"4136.00\",\n                \"status\": \"Pending\",\n                \"created_at\": \"2022-01-01T16:07:21.000000Z\",\n                \"updated_at\": \"2022-01-01T16:07:21.000000Z\",\n                \"deleted_at\": null,\n                \"product\": {\n                    \"id\": 5,\n                    \"name\": \"Eichmann Wall\",\n                    \"description\": \"Fuga illo distinctio placeat delectus aut omnis quo.\",\n                    \"price\": \"4136.00\",\n                    \"quantity\": 382,\n                    \"image\": \"https://via.placeholder.com/600x600.png/00ee22?text=1+iusto\",\n                    \"created_at\": \"2022-01-01T10:31:07.000000Z\",\n                    \"updated_at\": \"2022-01-03T05:30:48.000000Z\",\n                    \"deleted_at\": null\n                }\n            }\n        ],\n        \"notification\": [\n            []\n        ]\n    },\n    \"message\": \"User login Successful.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "User list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "121|2DMvJZSsXZojGh6LE6ig6EQyBtPUiEMhxwxRiMPr",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"users"
+							]
+						},
+						"description": "Get all user"
+					},
+					"response": [
+						{
+							"name": "User list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/Api/v1/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"Api",
+										"v1",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:9000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jan 2022 12:01:58 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jan 2022 12:01:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 2,\n            \"name\": \"Rezowana Akter\",\n            \"email\": \"rezowana10@gmail.com\",\n            \"is_admin\": 0,\n            \"email_verified_at\": null,\n            \"created_at\": \"2022-01-01T09:57:50.000000Z\",\n            \"updated_at\": \"2022-01-01T09:57:50.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Rezowana Akter\",\n            \"email\": \"rezowana101@gmail.com\",\n            \"is_admin\": 0,\n            \"email_verified_at\": null,\n            \"created_at\": \"2022-01-02T04:10:32.000000Z\",\n            \"updated_at\": \"2022-01-02T04:10:32.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Rezowana Akter\",\n            \"email\": \"joe@gmail.com\",\n            \"is_admin\": 0,\n            \"email_verified_at\": null,\n            \"created_at\": \"2022-01-02T04:13:52.000000Z\",\n            \"updated_at\": \"2022-01-02T04:13:52.000000Z\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"REZOWANA AKTER\",\n            \"email\": \"akter.ritu@northsouth.edu\",\n            \"is_admin\": 0,\n            \"email_verified_at\": null,\n            \"created_at\": \"2022-01-02T09:26:29.000000Z\",\n            \"updated_at\": \"2022-01-02T09:26:29.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Mokhles Uddin\",\n            \"email\": \"rezowana@aleshatech.com.bd\",\n            \"is_admin\": 0,\n            \"email_verified_at\": null,\n            \"created_at\": \"2022-01-02T09:30:28.000000Z\",\n            \"updated_at\": \"2022-01-02T09:30:28.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Rezowana Akter\",\n            \"email\": \"rezowana102@gmail.com\",\n            \"is_admin\": 0,\n            \"email_verified_at\": null,\n            \"created_at\": \"2022-01-03T03:41:35.000000Z\",\n            \"updated_at\": \"2022-01-03T03:41:35.000000Z\"\n        }\n    ],\n    \"message\": \"All User\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "filter",
+			"item": [
+				{
+					"name": "Filter Order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/filter/orders?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"filter",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						},
+						"description": " filter order by Unique id and status"
+					},
+					"response": [
+						{
+							"name": "Filter Order",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/Api/v1/filter/orders?id=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"Api",
+										"v1",
+										"filter",
+										"orders"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:9000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jan 2022 11:48:41 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jan 2022 11:48:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 2,\n            \"user_id\": 4,\n            \"name\": \"Rezowana\",\n            \"phone\": \"01781474358\",\n            \"address\": \"Gulshan, Dhaka\",\n            \"product_id\": 5,\n            \"price\": \"4136.00\",\n            \"quantity\": 1,\n            \"total_price\": \"4136.00\",\n            \"status\": \"Pending\",\n            \"created_at\": \"2022-01-01T10:07:21.000000Z\",\n            \"updated_at\": \"2022-01-01T10:07:21.000000Z\",\n            \"deleted_at\": null\n        }\n    ],\n    \"message\": \"Product filtered Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Filter Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/filter/products?name=Oliver Extension",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"filter",
+								"products"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Oliver Extension"
+								}
+							]
+						},
+						"description": "Filter Product by name"
+					},
+					"response": [
+						{
+							"name": "Filter Product",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/Api/v1/filter/products?name=Oliver Extension",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"Api",
+										"v1",
+										"filter",
+										"products"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Oliver Extension"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:9000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jan 2022 11:50:43 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jan 2022 11:50:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Oliver Extension\",\n            \"description\": \"Et id quo quo.\",\n            \"price\": \"2089.00\",\n            \"quantity\": 25,\n            \"image\": \"https://via.placeholder.com/600x600.png/002211?text=1+perferendis\",\n            \"created_at\": \"2022-01-01T04:31:07.000000Z\",\n            \"updated_at\": \"2022-01-01T04:31:07.000000Z\",\n            \"deleted_at\": null\n        }\n    ],\n    \"message\": \"Product filtered Successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9000/Api/v1/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/Api/v1/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"Api",
+						"v1",
+						"products"
+					]
+				},
+				"description": "Product list"
+			},
+			"response": [
+				{
+					"name": "http://localhost:9000/Api/v1/products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:9000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 31 Dec 2021 13:19:03 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 31 Dec 2021 13:19:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Jerde Common\",\n            \"description\": \"Natus ullam porro voluptas sint.\",\n            \"price\": \"2588.00\",\n            \"quantity\": 110,\n            \"image\": \"https://via.placeholder.com/600x600.png/003300?text=1+dicta\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Bednar Passage\",\n            \"description\": \"Cupiditate sint totam itaque eius consequuntur qui quia.\",\n            \"price\": \"2698.00\",\n            \"quantity\": 403,\n            \"image\": \"https://via.placeholder.com/600x600.png/00aacc?text=1+necessitatibus\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Katharina Drive\",\n            \"description\": \"Qui et voluptatum facere error aliquam est voluptas.\",\n            \"price\": \"3538.00\",\n            \"quantity\": 339,\n            \"image\": \"https://via.placeholder.com/600x600.png/005522?text=1+dignissimos\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Quigley Parkways\",\n            \"description\": \"Dolores inventore ipsam consequatur id itaque molestias.\",\n            \"price\": \"3617.00\",\n            \"quantity\": 157,\n            \"image\": \"https://via.placeholder.com/600x600.png/008811?text=1+tempora\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Stoltenberg Way\",\n            \"description\": \"Ipsum voluptate perferendis eius illo itaque.\",\n            \"price\": \"989.00\",\n            \"quantity\": 322,\n            \"image\": \"https://via.placeholder.com/600x600.png/002266?text=1+maxime\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Purdy Prairie\",\n            \"description\": \"Quibusdam nihil mollitia harum et voluptates accusantium perferendis.\",\n            \"price\": \"4714.00\",\n            \"quantity\": 253,\n            \"image\": \"https://via.placeholder.com/600x600.png/00ddcc?text=1+occaecati\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Jo Springs\",\n            \"description\": \"Eum ullam et vel eum saepe.\",\n            \"price\": \"4725.00\",\n            \"quantity\": 450,\n            \"image\": \"https://via.placeholder.com/600x600.png/004499?text=1+sed\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 8,\n            \"name\": \"McClure Corner\",\n            \"description\": \"Aspernatur omnis autem omnis consequatur.\",\n            \"price\": \"1726.00\",\n            \"quantity\": 427,\n            \"image\": \"https://via.placeholder.com/600x600.png/004400?text=1+corporis\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Merritt Expressway\",\n            \"description\": \"Dicta est magnam doloremque doloremque consectetur ipsa.\",\n            \"price\": \"3118.00\",\n            \"quantity\": 181,\n            \"image\": \"https://via.placeholder.com/600x600.png/0066aa?text=1+temporibus\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Gibson Islands\",\n            \"description\": \"Sequi veniam amet odio.\",\n            \"price\": \"2716.00\",\n            \"quantity\": 322,\n            \"image\": \"https://via.placeholder.com/600x600.png/006666?text=1+qui\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Shana Fort\",\n            \"description\": \"Deleniti repellendus quis occaecati dolore.\",\n            \"price\": \"4854.00\",\n            \"quantity\": 175,\n            \"image\": \"https://via.placeholder.com/600x600.png/005577?text=1+earum\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Sammy Vista\",\n            \"description\": \"A voluptatem dicta at ut odio ullam ipsum.\",\n            \"price\": \"3793.00\",\n            \"quantity\": 81,\n            \"image\": \"https://via.placeholder.com/600x600.png/005599?text=1+sunt\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Jameson Dale\",\n            \"description\": \"Rerum hic impedit qui neque debitis ipsam delectus dolores.\",\n            \"price\": \"1017.00\",\n            \"quantity\": 335,\n            \"image\": \"https://via.placeholder.com/600x600.png/00bb22?text=1+et\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 14,\n            \"name\": \"Aaliyah Common\",\n            \"description\": \"Rerum nostrum eius aliquid quis error.\",\n            \"price\": \"2873.00\",\n            \"quantity\": 59,\n            \"image\": \"https://via.placeholder.com/600x600.png/004477?text=1+accusantium\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Smitham Square\",\n            \"description\": \"Iure autem quo quo mollitia nulla qui.\",\n            \"price\": \"840.00\",\n            \"quantity\": 69,\n            \"image\": \"https://via.placeholder.com/600x600.png/005577?text=1+et\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 16,\n            \"name\": \"Dillon Shoals\",\n            \"description\": \"Non voluptatibus cum optio et ratione consequatur.\",\n            \"price\": \"4070.00\",\n            \"quantity\": 219,\n            \"image\": \"https://via.placeholder.com/600x600.png/00ff77?text=1+quo\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 17,\n            \"name\": \"Schmeler Parks\",\n            \"description\": \"Quidem velit quae sunt consequatur placeat quod numquam quibusdam.\",\n            \"price\": \"1788.00\",\n            \"quantity\": 219,\n            \"image\": \"https://via.placeholder.com/600x600.png/00dd11?text=1+rerum\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 18,\n            \"name\": \"Nelle Key\",\n            \"description\": \"Omnis aut cumque voluptates vitae in quos.\",\n            \"price\": \"4894.00\",\n            \"quantity\": 22,\n            \"image\": \"https://via.placeholder.com/600x600.png/00ee66?text=1+qui\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Abbott Hills\",\n            \"description\": \"Nesciunt quo vitae magnam.\",\n            \"price\": \"2262.00\",\n            \"quantity\": 401,\n            \"image\": \"https://via.placeholder.com/600x600.png/001166?text=1+vero\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 20,\n            \"name\": \"Jermaine Junctions\",\n            \"description\": \"Soluta impedit hic sit occaecati enim rerum ea.\",\n            \"price\": \"2759.00\",\n            \"quantity\": 103,\n            \"image\": \"https://via.placeholder.com/600x600.png/00aa22?text=1+sit\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 21,\n            \"name\": \"Ebert Dale\",\n            \"description\": \"Voluptatem repudiandae iure ut velit quam ducimus.\",\n            \"price\": \"1490.00\",\n            \"quantity\": 137,\n            \"image\": \"https://via.placeholder.com/600x600.png/002244?text=1+voluptatem\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 22,\n            \"name\": \"Frami Branch\",\n            \"description\": \"Voluptas in et nihil voluptas ut saepe ratione ex.\",\n            \"price\": \"2233.00\",\n            \"quantity\": 337,\n            \"image\": \"https://via.placeholder.com/600x600.png/003344?text=1+nihil\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 23,\n            \"name\": \"Rossie Port\",\n            \"description\": \"Non nulla voluptatem dolor sint cumque distinctio nam totam.\",\n            \"price\": \"1580.00\",\n            \"quantity\": 337,\n            \"image\": \"https://via.placeholder.com/600x600.png/005511?text=1+vel\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 24,\n            \"name\": \"Kunde Summit\",\n            \"description\": \"Earum accusamus maxime nam aperiam.\",\n            \"price\": \"4877.00\",\n            \"quantity\": 304,\n            \"image\": \"https://via.placeholder.com/600x600.png/008833?text=1+et\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 25,\n            \"name\": \"Hartmann Shoals\",\n            \"description\": \"Et illum error a.\",\n            \"price\": \"1535.00\",\n            \"quantity\": 224,\n            \"image\": \"https://via.placeholder.com/600x600.png/006633?text=1+omnis\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 26,\n            \"name\": \"Price Bypass\",\n            \"description\": \"Et et corrupti laudantium sit.\",\n            \"price\": \"4912.00\",\n            \"quantity\": 488,\n            \"image\": \"https://via.placeholder.com/600x600.png/008800?text=1+ut\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 27,\n            \"name\": \"Eudora Divide\",\n            \"description\": \"Nemo sapiente et ullam iste dignissimos beatae.\",\n            \"price\": \"3289.00\",\n            \"quantity\": 183,\n            \"image\": \"https://via.placeholder.com/600x600.png/003377?text=1+natus\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 28,\n            \"name\": \"Luettgen Walks\",\n            \"description\": \"Ullam dolore reprehenderit libero ducimus voluptates minima.\",\n            \"price\": \"1579.00\",\n            \"quantity\": 72,\n            \"image\": \"https://via.placeholder.com/600x600.png/003344?text=1+dicta\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 29,\n            \"name\": \"Kuphal Mission\",\n            \"description\": \"Accusamus dolore ut nulla repellendus assumenda.\",\n            \"price\": \"4268.00\",\n            \"quantity\": 500,\n            \"image\": \"https://via.placeholder.com/600x600.png/005555?text=1+assumenda\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 30,\n            \"name\": \"Serena Terrace\",\n            \"description\": \"Ea nam voluptas voluptatem in libero ea labore.\",\n            \"price\": \"4327.00\",\n            \"quantity\": 256,\n            \"image\": \"https://via.placeholder.com/600x600.png/004477?text=1+nobis\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 31,\n            \"name\": \"Granville Pines\",\n            \"description\": \"Asperiores maxime nisi nam sed officia.\",\n            \"price\": \"1054.00\",\n            \"quantity\": 442,\n            \"image\": \"https://via.placeholder.com/600x600.png/001177?text=1+sit\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 32,\n            \"name\": \"Savanah Road\",\n            \"description\": \"Ut et commodi cum excepturi consectetur.\",\n            \"price\": \"4014.00\",\n            \"quantity\": 141,\n            \"image\": \"https://via.placeholder.com/600x600.png/004422?text=1+ut\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 33,\n            \"name\": \"Vicenta Port\",\n            \"description\": \"Ut esse officiis et veritatis autem non dolor.\",\n            \"price\": \"4849.00\",\n            \"quantity\": 53,\n            \"image\": \"https://via.placeholder.com/600x600.png/00dd88?text=1+ut\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 34,\n            \"name\": \"Selina Pike\",\n            \"description\": \"Quis aut quos ut qui quisquam.\",\n            \"price\": \"2031.00\",\n            \"quantity\": 90,\n            \"image\": \"https://via.placeholder.com/600x600.png/0044ee?text=1+mollitia\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 35,\n            \"name\": \"Chelsea Mount\",\n            \"description\": \"Rerum dolorem esse pariatur aut inventore est.\",\n            \"price\": \"2546.00\",\n            \"quantity\": 494,\n            \"image\": \"https://via.placeholder.com/600x600.png/000055?text=1+illo\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 36,\n            \"name\": \"Timmothy Crossroad\",\n            \"description\": \"Doloribus pariatur enim cum rerum.\",\n            \"price\": \"3030.00\",\n            \"quantity\": 128,\n            \"image\": \"https://via.placeholder.com/600x600.png/00aadd?text=1+est\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 37,\n            \"name\": \"Ed Street\",\n            \"description\": \"Ut consequuntur illo sed ratione quas.\",\n            \"price\": \"2363.00\",\n            \"quantity\": 227,\n            \"image\": \"https://via.placeholder.com/600x600.png/0000aa?text=1+voluptatibus\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 38,\n            \"name\": \"Gregory Underpass\",\n            \"description\": \"Debitis illo exercitationem laborum ea sunt.\",\n            \"price\": \"4644.00\",\n            \"quantity\": 116,\n            \"image\": \"https://via.placeholder.com/600x600.png/004477?text=1+quaerat\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 39,\n            \"name\": \"Solon Streets\",\n            \"description\": \"Est dolorum facilis dignissimos incidunt quisquam culpa omnis voluptas.\",\n            \"price\": \"674.00\",\n            \"quantity\": 281,\n            \"image\": \"https://via.placeholder.com/600x600.png/007722?text=1+veritatis\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 40,\n            \"name\": \"Isobel Groves\",\n            \"description\": \"Aut dolores eius suscipit odio libero velit.\",\n            \"price\": \"1766.00\",\n            \"quantity\": 74,\n            \"image\": \"https://via.placeholder.com/600x600.png/0011cc?text=1+nemo\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 41,\n            \"name\": \"Elliot Extension\",\n            \"description\": \"Natus harum quo eos.\",\n            \"price\": \"4601.00\",\n            \"quantity\": 376,\n            \"image\": \"https://via.placeholder.com/600x600.png/0000ee?text=1+quidem\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 42,\n            \"name\": \"Johns View\",\n            \"description\": \"Qui dicta voluptatem est repudiandae temporibus.\",\n            \"price\": \"3966.00\",\n            \"quantity\": 454,\n            \"image\": \"https://via.placeholder.com/600x600.png/005555?text=1+deleniti\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 43,\n            \"name\": \"Briana Well\",\n            \"description\": \"Atque voluptatum ab molestiae.\",\n            \"price\": \"2323.00\",\n            \"quantity\": 269,\n            \"image\": \"https://via.placeholder.com/600x600.png/00ddff?text=1+error\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 44,\n            \"name\": \"Marguerite Mount\",\n            \"description\": \"Illum earum ut molestias numquam.\",\n            \"price\": \"2064.00\",\n            \"quantity\": 220,\n            \"image\": \"https://via.placeholder.com/600x600.png/007711?text=1+sed\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 45,\n            \"name\": \"Homenick Ferry\",\n            \"description\": \"Fugiat non consectetur ea atque.\",\n            \"price\": \"2371.00\",\n            \"quantity\": 105,\n            \"image\": \"https://via.placeholder.com/600x600.png/00cc99?text=1+repudiandae\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 46,\n            \"name\": \"Corwin Parkway\",\n            \"description\": \"Cupiditate molestiae dolor assumenda.\",\n            \"price\": \"4630.00\",\n            \"quantity\": 30,\n            \"image\": \"https://via.placeholder.com/600x600.png/002200?text=1+illum\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 47,\n            \"name\": \"Schoen Burg\",\n            \"description\": \"Explicabo nostrum reprehenderit non facilis recusandae aperiam.\",\n            \"price\": \"4967.00\",\n            \"quantity\": 249,\n            \"image\": \"https://via.placeholder.com/600x600.png/004422?text=1+expedita\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 48,\n            \"name\": \"Sanford Walk\",\n            \"description\": \"Et sint incidunt voluptatem ab ea.\",\n            \"price\": \"554.00\",\n            \"quantity\": 39,\n            \"image\": \"https://via.placeholder.com/600x600.png/001199?text=1+itaque\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 49,\n            \"name\": \"Nienow Mall\",\n            \"description\": \"Velit dolorem officiis sed fugiat alias.\",\n            \"price\": \"4321.00\",\n            \"quantity\": 363,\n            \"image\": \"https://via.placeholder.com/600x600.png/007788?text=1+qui\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 50,\n            \"name\": \"Macejkovic Radial\",\n            \"description\": \"Quo quisquam cupiditate nesciunt dolorum nisi molestias sapiente autem.\",\n            \"price\": \"1511.00\",\n            \"quantity\": 477,\n            \"image\": \"https://via.placeholder.com/600x600.png/008822?text=1+dolor\",\n            \"created_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"updated_at\": \"2021-12-31T12:46:02.000000Z\",\n            \"deleted_at\": null\n        }\n    ],\n    \"message\": \"Product list viewed Successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9000/Api/v1/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "T-shirt",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Comfortable T-shirt for men",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "650",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "https://via.placeholder.com/600x600.png/005522?text=1+dignissimos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/Api/v1/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"Api",
+						"v1",
+						"products"
+					]
+				},
+				"description": "Create Product"
+			},
+			"response": [
+				{
+					"name": "http://localhost:9000/Api/v1/products",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "T-shirt",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Comfortable T-shirt for men",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "650",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "https://via.placeholder.com/600x600.png/005522?text=1+dignissimos",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:9000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 31 Dec 2021 13:20:56 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 31 Dec 2021 13:20:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"product\": {\n            \"name\": \"T-shirt\",\n            \"description\": \"Comfortable T-shirt for men\",\n            \"price\": \"650\",\n            \"quantity\": \"200\",\n            \"image\": \"https://via.placeholder.com/600x600.png/005522?text=1+dignissimos\",\n            \"updated_at\": \"2021-12-31T13:20:56.000000Z\",\n            \"created_at\": \"2021-12-31T13:20:56.000000Z\",\n            \"id\": 51\n        }\n    },\n    \"message\": \"Product Created Successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9000/Api/v1/products/update/1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "V-neck t-shirt",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Winter t-shirt for Women",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "995",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "https://via.placeholder.com/600x600.png/003300?text=1+dicta",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/Api/v1/products/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"Api",
+						"v1",
+						"products",
+						"update",
+						"1"
+					]
+				},
+				"description": "Update Product"
+			},
+			"response": [
+				{
+					"name": "http://localhost:9000/Api/v1/products/update/1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "V-neck t-shirt",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Winter t-shirt for Women",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "995",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "50",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "https://via.placeholder.com/600x600.png/003300?text=1+dicta",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/products/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"products",
+								"update",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:9000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 31 Dec 2021 13:23:13 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 31 Dec 2021 13:23:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"product\": {\n            \"id\": 1,\n            \"name\": \"V-neck t-shirt\",\n            \"description\": \"Winter t-shirt for Women\",\n            \"price\": \"995\",\n            \"quantity\": \"50\",\n            \"image\": \"https://via.placeholder.com/600x600.png/003300?text=1+dicta\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T13:23:13.000000Z\",\n            \"deleted_at\": null\n        }\n    },\n    \"message\": \"Product Updated Successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9000/Api/v1/products/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/Api/v1/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"Api",
+						"v1",
+						"products",
+						"1"
+					]
+				},
+				"description": "Show Product by id"
+			},
+			"response": [
+				{
+					"name": "http://localhost:9000/Api/v1/products/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/products/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"products",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:9000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 31 Dec 2021 13:23:47 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 31 Dec 2021 13:23:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"product\": {\n            \"id\": 1,\n            \"name\": \"V-neck t-shirt\",\n            \"description\": \"Winter t-shirt for Women\",\n            \"price\": \"995.00\",\n            \"quantity\": 50,\n            \"image\": \"https://via.placeholder.com/600x600.png/003300?text=1+dicta\",\n            \"created_at\": \"2021-12-31T12:46:01.000000Z\",\n            \"updated_at\": \"2021-12-31T13:23:13.000000Z\",\n            \"deleted_at\": null\n        }\n    },\n    \"message\": \"Product Viewed Successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9000/Api/v1/products/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/Api/v1/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"Api",
+						"v1",
+						"products",
+						"1"
+					]
+				},
+				"description": "Delete Product"
+			},
+			"response": [
+				{
+					"name": "http://localhost:9000/Api/v1/products/1",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/products/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"products",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:9000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 31 Dec 2021 13:24:17 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 31 Dec 2021 13:24:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": \"Deleted\",\n    \"message\": \"Product Deleted Successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9000/Api/v1/order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Rezowana",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "01781474358",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Gulshan, Dhaka",
+							"type": "text"
+						},
+						{
+							"key": "product_id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "4136",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "total_price",
+							"value": "4136",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/Api/v1/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"Api",
+						"v1",
+						"order"
+					]
+				},
+				"description": "Create Order api"
+			},
+			"response": [
+				{
+					"name": "http://localhost:9000/Api/v1/order",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Rezowana",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01781474358",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Gulshan, Dhaka",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "4136",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "total_price",
+									"value": "4136",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"order"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:9000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Jan 2022 16:07:21 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Jan 2022 16:07:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"user_id\": \"2\",\n        \"name\": \"Rezowana\",\n        \"phone\": \"01781474358\",\n        \"address\": \"Gulshan, Dhaka\",\n        \"product_id\": \"5\",\n        \"price\": \"4136\",\n        \"quantity\": \"1\",\n        \"total_price\": \"4136\",\n        \"updated_at\": \"2022-01-01T16:07:21.000000Z\",\n        \"created_at\": \"2022-01-01T16:07:21.000000Z\",\n        \"id\": 2\n    },\n    \"message\": \"Order Created Successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9000/Api/v1/order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/Api/v1/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"Api",
+						"v1",
+						"order"
+					]
+				},
+				"description": "Get Order"
+			},
+			"response": [
+				{
+					"name": "http://localhost:9000/Api/v1/order",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"order"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:9000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Jan 2022 16:47:19 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Jan 2022 16:47:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"order\": [\n            {\n                \"id\": 1,\n                \"user_id\": 2,\n                \"name\": \"Rezowana\",\n                \"phone\": \"01781474358\",\n                \"address\": \"Gulshan, Dhaka\",\n                \"product_id\": 5,\n                \"price\": \"4136.00\",\n                \"quantity\": 1,\n                \"total_price\": \"4136.00\",\n                \"status\": \"Pending\",\n                \"created_at\": \"2022-01-01T16:01:22.000000Z\",\n                \"updated_at\": \"2022-01-01T16:01:22.000000Z\",\n                \"deleted_at\": null,\n                \"product\": {\n                    \"id\": 5,\n                    \"name\": \"Eichmann Wall\",\n                    \"description\": \"Fuga illo distinctio placeat delectus aut omnis quo.\",\n                    \"price\": \"4136.00\",\n                    \"quantity\": 388,\n                    \"image\": \"https://via.placeholder.com/600x600.png/00ee22?text=1+iusto\",\n                    \"created_at\": \"2022-01-01T10:31:07.000000Z\",\n                    \"updated_at\": \"2022-01-01T10:31:07.000000Z\",\n                    \"deleted_at\": null\n                }\n            },\n            {\n                \"id\": 2,\n                \"user_id\": 2,\n                \"name\": \"Rezowana\",\n                \"phone\": \"01781474358\",\n                \"address\": \"Gulshan, Dhaka\",\n                \"product_id\": 5,\n                \"price\": \"4136.00\",\n                \"quantity\": 1,\n                \"total_price\": \"4136.00\",\n                \"status\": \"Pending\",\n                \"created_at\": \"2022-01-01T16:07:21.000000Z\",\n                \"updated_at\": \"2022-01-01T16:07:21.000000Z\",\n                \"deleted_at\": null,\n                \"product\": {\n                    \"id\": 5,\n                    \"name\": \"Eichmann Wall\",\n                    \"description\": \"Fuga illo distinctio placeat delectus aut omnis quo.\",\n                    \"price\": \"4136.00\",\n                    \"quantity\": 388,\n                    \"image\": \"https://via.placeholder.com/600x600.png/00ee22?text=1+iusto\",\n                    \"created_at\": \"2022-01-01T10:31:07.000000Z\",\n                    \"updated_at\": \"2022-01-01T10:31:07.000000Z\",\n                    \"deleted_at\": null\n                }\n            }\n        ]\n    },\n    \"message\": \"All Order List\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9000/Api/v1/order/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/Api/v1/order/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"Api",
+						"v1",
+						"order",
+						"1"
+					]
+				},
+				"description": "View Order"
+			},
+			"response": [
+				{
+					"name": "http://localhost:9000/Api/v1/order/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/order/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"order",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:9000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Jan 2022 16:47:55 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Jan 2022 16:47:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"order\": {\n            \"id\": 1,\n            \"user_id\": 2,\n            \"name\": \"Rezowana\",\n            \"phone\": \"01781474358\",\n            \"address\": \"Gulshan, Dhaka\",\n            \"product_id\": 5,\n            \"price\": \"4136.00\",\n            \"quantity\": 1,\n            \"total_price\": \"4136.00\",\n            \"status\": \"Pending\",\n            \"created_at\": \"2022-01-01T16:01:22.000000Z\",\n            \"updated_at\": \"2022-01-01T16:01:22.000000Z\",\n            \"deleted_at\": null\n        }\n    },\n    \"message\": \"All Order List\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9000/Api/v1/order/update/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "91|LaUmYAZDZ7Kvi995J3VOAbJ4QhbiXcTSaNRrlP4H",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "91|LaUmYAZDZ7Kvi995J3VOAbJ4QhbiXcTSaNRrlP4H",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "quantity",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "total_price",
+							"value": "8272",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/Api/v1/order/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"Api",
+						"v1",
+						"order",
+						"update",
+						"1"
+					]
+				},
+				"description": "Update Order"
+			},
+			"response": [
+				{
+					"name": "http://localhost:9000/Api/v1/order/update/1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "91|LaUmYAZDZ7Kvi995J3VOAbJ4QhbiXcTSaNRrlP4H",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "quantity",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "total_price",
+									"value": "8272",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/order/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"order",
+								"update",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:9000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jan 2022 18:46:09 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jan 2022 18:46:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"order\": {\n            \"id\": 1,\n            \"user_id\": 2,\n            \"name\": \"Rezowana\",\n            \"phone\": \"01781474358\",\n            \"address\": \"Gulshan, Dhaka\",\n            \"product_id\": 5,\n            \"price\": \"4136.00\",\n            \"quantity\": \"2\",\n            \"total_price\": \"8272\",\n            \"status\": \"Pending\",\n            \"created_at\": \"2022-01-01T16:01:22.000000Z\",\n            \"updated_at\": \"2022-01-02T18:46:09.000000Z\",\n            \"deleted_at\": null\n        }\n    },\n    \"message\": \"Order Updated Successfully\"\n}"
+				},
+				{
+					"name": "http://localhost:9000/Api/v1/order/update/1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "91|LaUmYAZDZ7Kvi995J3VOAbJ4QhbiXcTSaNRrlP4H",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "quantity",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "total_price",
+									"value": "8272",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/order/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"order",
+								"update",
+								"1"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:9000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jan 2022 18:46:53 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jan 2022 18:46:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"failed\",\n    \"data\": \"Sorry you are not allowed to edit this Order\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9000/Api/v1/order/status/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "91|LaUmYAZDZ7Kvi995J3VOAbJ4QhbiXcTSaNRrlP4H",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status",
+							"value": "Delivered",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/Api/v1/order/status/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"Api",
+						"v1",
+						"order",
+						"status",
+						"1"
+					]
+				},
+				"description": "Update Order Status"
+			},
+			"response": [
+				{
+					"name": "http://localhost:9000/Api/v1/order/status/1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "status",
+									"value": "Delivered",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/Api/v1/order/status/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Api",
+								"v1",
+								"order",
+								"status",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:9000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jan 2022 18:49:39 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jan 2022 18:49:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 1,\n        \"user_id\": 2,\n        \"name\": \"Rezowana\",\n        \"phone\": \"01781474358\",\n        \"address\": \"Gulshan, Dhaka\",\n        \"product_id\": 5,\n        \"price\": \"4136.00\",\n        \"quantity\": 2,\n        \"total_price\": \"8272.00\",\n        \"status\": \"Delivered\",\n        \"created_at\": \"2022-01-01T16:01:22.000000Z\",\n        \"updated_at\": \"2022-01-02T18:48:35.000000Z\",\n        \"deleted_at\": null\n    },\n    \"message\": \"Order Status Updated Successfully\"\n}"
+				}
+			]
+		}
+	]
+}

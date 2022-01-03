@@ -96,4 +96,17 @@ class OrderController extends MainController
             return $this->errorResponse('Unauthorized', 'Sorry you are not authorized to perform this action.');
         }
     }
+
+    public function filterOrder(Request $request, Order $order)
+    {
+        $filter = $order->newQuery();
+
+        if ($request->has('id')) {
+            $filter->where('id', $request->id);
+        }
+        if ($request->has('status')) {
+            $filter->where('status', $request->status);
+        }
+        return $this->successResponse($filter->get(), 'Product filtered Successfully', Response::HTTP_OK);
+    }
 }

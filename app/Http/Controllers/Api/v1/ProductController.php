@@ -7,6 +7,7 @@ use App\Models\Product;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Services\ProductServices;
+use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 class ProductController extends MainController
@@ -75,6 +76,15 @@ class ProductController extends MainController
         $productServices->imageDelete($product->image);
         $product->delete();
         return $this->successResponse('Deleted', 'Product Deleted Successfully', Response::HTTP_OK);
+    }
+
+    public function filterProduct(Request $request, Product $product)
+    {
+        $filter = $product->newQuery();
+        if ($request->has('name')) {
+            $filter->where('name', 'LIKE', "%{$request->name}%");
+        }
+        return $this->successResponse($filter->get(), 'Product filtered Successfully', Response::HTTP_OK);
     }
 
 }
