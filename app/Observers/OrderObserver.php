@@ -24,7 +24,7 @@ class OrderObserver
      */
     public function created(Order $order)
     {
-
+        dispatch(new OrderCreateJob($order));
     }
 
     /**
@@ -38,7 +38,10 @@ class OrderObserver
         if ($order->status == 'Delivered')
         {
             $product = Product::find($order->product_id);
-            $product->decrement('quantity', $order->quantity);
+            $quantity = array(
+                'quantity' => ($product->quantity - $order->quantity)
+            );
+            $product->update($quantity);
         }
     }
 

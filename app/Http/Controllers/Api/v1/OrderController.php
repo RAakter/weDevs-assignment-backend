@@ -7,6 +7,7 @@ use App\Http\Requests\StoreOrderRequest;
 use App\Http\Requests\UpdateOrderRequest;
 use App\Models\Order;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
 class OrderController extends MainController
@@ -75,15 +76,24 @@ class OrderController extends MainController
      */
     public function destroy(Order $order)
     {
-        $order->delete();
-        return $this->successResponse('Deleted', 'Order Deleted Successfully');
+        if (Auth::user()->is_admin == 1) {
+            $order->delete();
+            return $this->successResponse('Deleted', 'Order Deleted Successfully');
+        }
+        else{
+            return $this->errorResponse('Unauthorized', 'Sorry you are not authorized to perform this action.');
+        }
     }
 
     public function statusUpdate(Order $order, Request $request)
     {
-        $order->update($request->only('status'));
-        $data['order'] =  $order;
-
-        return $this->successResponse($order, 'Order Status Updated Successfully');
+        if (Auth::user()->is_admin == 1){
+            $order->update($request->only('status'));
+            $data['order'] =  $order;
+            return $this->successResponse($order, 'Order Status Updated Successfully');
+        }
+        else{
+            return $this->errorResponse('Unauthorized', 'Sorry you are not authorized to perform this action.');
+        }
     }
 }
